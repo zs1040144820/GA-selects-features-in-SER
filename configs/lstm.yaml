@@ -1,0 +1,29 @@
+model: lstm
+
+# 数据集
+data_path: configs\datasets\RAVDESS  # 数据集路径
+# class_labels: ["angry", "fear", "happy", "neutral", "sad", "surprise"]  # 情感标签
+# class_labels: ["positive", "negative", "neutral"]
+# class_labels: ["angry", "boredom", "disgust", "fear", "happy", "neutral", "sad"]
+class_labels: ["neutral", "calm", "happy", "sad", "angry", "fearful", "disgust", "surprised"]
+# 特征
+feature_folder: features/6-category/opensmile_casia/  # 特征存储文件夹
+feature_method: o  # 'o': opensmile, 'l': librosa  # 特征提取方式
+
+# Opensmile 配置，只在 'feature_method: o' 时需要设置
+opensmile_config: IS09_emotion  # Opensmile 标准特征集
+opensmile_path: D:\SoftwareData\PyCharmData\Z\Speech-Emotion-Recognition-master\opensmile  # Opensmile 安装路径
+
+# checkpoints
+checkpoint_path: checkpoints/  # checkpoint 存储路径
+checkpoint_name: LSTM_OPENSMILE_IS09  # checkpoint 文件名
+
+# 训练参数
+epochs: 20  # 训练 epoch 数
+batch_size: 32  # 批大小
+lr: 0.001  # 学习率
+
+# 模型参数
+rnn_size: 128  # LSTM 隐藏层大小
+hidden_size: 32
+dropout: 0.5
