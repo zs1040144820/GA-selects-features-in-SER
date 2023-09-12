@@ -6,7 +6,6 @@
 \
 注：由于已每次训练结果的参数作为适应度值，这会花费大量的时间。所以我们设置了中断机制，即使中途停止了运行，也可将上代保留的种群作为初始种群进行继续迭代。
 &nbsp;
-![image](https://github.com/zs1040144820/GA-selects-features-in-SER/assets/53138937/80c47f57-45bc-40df-bcd5-87ba83d1663e)
 
 
 ## Environments
