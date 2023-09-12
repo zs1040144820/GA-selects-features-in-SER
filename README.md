@@ -1,4 +1,4 @@
-# Speech Emotion Recognition 
+# GA-selects-features-in-SER 
 
 ① 用 LSTM、CNN、SVM、MLP 进行语音情感识别，Keras 实现。改进了特征提取方式，识别准确率提高到了 80% 左右。
 \
